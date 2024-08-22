@@ -1,5 +1,5 @@
 .navbar {
-  padding: 20px 0;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,6 +33,7 @@
   color: #49557e;
   cursor: pointer;
   transition: 0.3s;
+  text-wrap: nowrap;
 }
 
 .navbar button:hover {
@@ -60,4 +61,62 @@
   left: 21px;
   min-height: 10px;
   min-width: 10px;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right {
+    gap: 30px;
+  }
+  .navbar-right img {
+    width: 22px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+  .navbar-search-icon .dot {
+    top: 15px;
+    left: 15px;
+    min-height: 8px;
+    min-width: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
+  .navbar-search-icon .dot {
+    top: 14px;
+    left: 14px;
+  }
 }
