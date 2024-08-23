@@ -54,7 +54,7 @@
 
 @media (max-width: 750px) {
   .header-content {
-    max-width: 65%;
+    max-width: 75%;
   }
   .header-content p {
     display: none;

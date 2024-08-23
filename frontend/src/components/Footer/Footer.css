@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 750px) {
+  .footer {
+    margin-top: 50px;
+  }
   .footer-content {
     display: flex;
     flex-direction: column;
