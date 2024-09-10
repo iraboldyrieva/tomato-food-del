@@ -63,6 +63,43 @@
   min-width: 10px;
 }
 
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-profile-dropdown {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  display: none;
+  white-space: nowrap;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: seashell;
+  padding: 12px 25px;
+  border-radius: 4px;
+  outline: 2px solid white;
+}
+
+.navbar-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-profile-dropdown li:hover {
+  color: tomato;
+}
+
+.navbar-profile-dropdown img {
+  width: 20px;
+}
+
 @media (max-width: 1050px) {
   .navbar .logo {
     width: 140px;
